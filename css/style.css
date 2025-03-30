@@ -181,6 +181,22 @@
     }
 }
 
+.crop-container {
+    width: 300px; /* Set the desired width */
+    height: 300px; /* Set the desired height to maintain 1:1 aspect ratio */
+    overflow: hidden;
+    position: relative;
+}
+
+.crop-container img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .modal-video .modal-dialog {
     position: relative;
     max-width: 800px;
